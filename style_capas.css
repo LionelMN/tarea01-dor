@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=PT+Sans&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'PT Sans'
+}
+
+header{
+    background: url('/assets/headerImg.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: center;
+    font-family: 'Nunito';
+    height: 100vh;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: #80AB9F;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    color: white;
+    align-items: center;
+    z-index: 1;
+    font-size: 1.2rem;
+}
+
+.navbar a{
+    width: 10%;
+}
+
+.navbar a img.logoImg{
+    width: 200%;
+    height: 100px;
+}
+
+.navbar__item img{
+    width: 30px;
+}
+
+a{
+    font-family: 'Nunito';
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    background-color: #b29e86;
+    padding: 1rem;
+}
+
+.navbar div{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar div a{
+    padding: 1rem 2.5rem;
+    border-radius: 15px;
+}
+
+.navbar div a:hover{
+    background: #6e9489;
+}
+
+.gallery__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #61637B;
+}
+
+.gallery__pic img{
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+}
+
+/*Carrousel styles*/
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container img{
+    width: 100%;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 20px 0 0 20px;
+}
+.prev:hover {
+    border-radius: 20px 0 0 20px;
+}
+.next:hover {
+    border-radius: 0 20px 20px 0;
+}
+
+.dotsContainer{
+    text-align:center
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 0;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+footer{
+    background: #61637B;
+    color: white;
+    padding: 1rem;
+}
