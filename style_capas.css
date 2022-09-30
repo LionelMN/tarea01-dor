@@ -6,7 +6,7 @@ body{
 }
 
 header{
-    background: url('/assets/headerImg.jpeg');
+    background: url('assets/headerImg.jpeg');
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     background-position: center;
