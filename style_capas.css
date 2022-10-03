@@ -21,7 +21,7 @@ header{
     display: grid;
     grid-template-columns: 75% 25%;
     color: white;
-    align-items: center;
+    align-items: left;
     z-index: 1;
     font-size: 1.2rem;
 }
