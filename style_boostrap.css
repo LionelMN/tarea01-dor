@@ -6,16 +6,23 @@ body *{
 
 
 
-.navbar *{
+.container-fluid .row *{
     background-color: #80AB9F;
     color:white;
-    width: 100px;
     
     
-    
-   
     
 }
+
+.container-fluid .row img{
+
+    width:100%;
+    padding: 0;
+    height: 150px;
+}
+
+
+
 
 .navbar a{
     color:white;
