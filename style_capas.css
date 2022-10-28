@@ -53,7 +53,7 @@ a{
 }
 
 .container{
-    background-color: #b29e86;
+    background-color: white;
     padding: 1rem;
     grid-area: container;
 }
@@ -85,21 +85,24 @@ a{
 }
 
 .gallery__container{
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: #61637B;
     display: grid;
     grid-template: 
-        'gallery__pic gallery__pic2 gallery__pic3';
+        'gallery__pic . . . .';
+        height: 600px;
 }
 
 .gallery__pic{
     grid-area: gallery__pic;
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
 
 }
 
 .gallery__pic2{
-    grid-area: gallery__pic2;
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
 
 }
 
