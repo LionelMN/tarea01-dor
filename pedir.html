@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir para llevar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="alternate stylesheet" title="Colores seguros"type="text/css" href="coloresSeguros.css" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+
+            <div class="menu" id="menu">
+                <ul>
+                    <a href="./menu.pdf" target="_blank"><li><h1>Menu</h1></li></a>
+                    <a href="./contacto.html"><li><h1>Contacto</h1></li></a>
+                    <a href="./reserva.html"><li><h1>Reservar</h1></li></a>
+                    <a href="./pedir.html"><li><h1>Pedir para llevar</h1></li></a>
+                </ul>
+            </div>
+
+            <a href="./menu.pdf" target="_blank" id="menu"><h4>Menu</h4></a>
+            <a href="./contacto.html" id="menu"><h4>Contacto</h4></a>
+
+            <a href="index_capas.html">
+                <img class="logoImg" src="assets/logo.jpg" alt="logo de la Korianda">
+            </a>
+
+            <a href="./reserva.html" id="menu"><h4>Reserva</h4></a>
+            <a href="./pedir.html" id="menu"><h4>Pedir para llevar</h4></a>
+
+            <div class="hamburgerMenu" id="hamburgerMenu">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="container" id="reservaContainer">
+            <h2>Pedido</h2>
+            <div class="container__body reserva__info">
+                <form action="pedir.html" method="post">
+
+                    <div>
+                        <label for="nombre">Nombre y apellidos</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre">
+                        <div class="error" id="nameError">El nombre no puede estar vacío</div>
+                    </div>
+
+                    <div>
+                        <label for="dia">Día</label>
+                        <input type="date" name="dia" id="dia">
+                        <div class="error" id="diaError">El día no puede estar vacío</div>
+                    </div>
+
+                    <div>
+                        <label for="hora">Hora</label>
+                        <input type="time" name="hora" id="hora">
+                        <div class="error" id="horaError">La hora no puede estar vacía</div>
+                    </div>
+
+                    <label for="pedidos" id="pedidos">Pedidos</label>
+                    <div id="pedidos">
+                        <div class="slider" id="slider">
+
+                        </div>
+                    </div>
+
+                    <label for="observaciones">Observaciones</label>
+                    <textarea name="observaciones" id="observaciones" cols="30" rows="10">Alergias</textarea>
+                    <input type="submit" value="Enviar" id="submitButtonDelivery">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque incidunt pariatur neque, reprehenderit exercitationem odio ullam, deleniti dignissimos non iure commodi quaerat amet nostrum asperiores, autem molestias? Corrupti, inventore? Expedita?
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
