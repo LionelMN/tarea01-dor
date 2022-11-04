@@ -6,7 +6,6 @@ let isShowed = false;
 
 let errorNombreDiv = document.querySelector('#nameError');
 let errorComensalesDiv = document.querySelector('#comensalesError');
-let errorDireccionDiv = document.querySelector('#direccionError');
 let errorDiaDiv = document.querySelector('#diaError');
 let errorHoraDiv = document.querySelector('#horaError');
 
@@ -125,23 +124,17 @@ let addToCommand = (id) =>{
 
 validateDeliveryForm = () =>{
     errorNombreDiv.classList.remove('showed');
-    errorDireccionDiv.classList.remove('showed');
     errorDiaDiv.classList.remove('showed');
     errorHoraDiv.classList.remove('showed');
 
     let nombre = document.getElementById('nombre').value;
 
-    let direccion = document.getElementById('direccion').value;
     let dia = document.getElementById('dia').value;
     let hora = document.getElementById('hora').value;
 
     let errors = false;
     if(nombre == ''){
         errorNombreDiv.classList.add('showed');
-        errors = true;
-    }
-    if(direccion == ''){
-        errorDireccionDiv.classList.add('showed');
         errors = true;
     }
     if(dia == ''){

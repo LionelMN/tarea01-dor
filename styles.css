@@ -196,7 +196,6 @@ iframe{
 }
 
 footer{
-    height: 60px;
     background: var(--footer-color);
     padding: 1rem;
     flex-shrink: 0;
