@@ -4,107 +4,127 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link rel="stylesheet" href="style_boostrap.css">
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+  <link rel="stylesheet" href="style_boostrap.css">
 
 </head>
 
 <body>
-
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-2">
-        <a href="#"><img src="assets/logo.jpg" alt="" width=250px height=100px></a>
-      </div>
-
-      <div class="col-10 text-end align-middle">
-        <a><i class="bi bi-book-half"></i>Menu</a>
-        <a><i class="bi bi-telephone-fill"></i>Contacto</a>
+  <header class="d-print-none">
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand d-lg-none" href="#">
+        <img src="assets/logo.jpg" alt="" width="100%" id="logomobile" height="auto" class="img-fluid d-block mx-auto">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"> <img src="assets/menu_book_black_24dp.svg" alt="menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./assets/phone_black_24dp.svg" alt="contacto"> Contacto</a>
+          </li>
+          <li class="nav-item ">
+          <a class="nav-link" href="#">
+            <img src="assets/logo.jpg" alt="">
+          </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./assets/utensils-solid.svg" alt="reserva">  Reserva</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./assets/bag-shopping-solid.svg" alt="pedidos"> Pedidos</a>
+          </li>
+        </ul>
       </div>
     </div>
-</div>
+  </nav>
+</header>
 
-
-    <div class="container d-flex align-items-center flex-column ">
-
-      <img class="masthead-avatar mb-5 h-50px" src="assets/headerImg.jpeg" alt="jpg" />
-
-      <h1 class="masthead-heading  mb-5">La Korianda</h1>
-
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien urna, faucibus eget maximus quis,
-            lacinia
-            quis urna. Sed in vulputate nibh. Aenean convallis dictum libero eget congue. Maecenas aliquet non nisi
-            bibendum
-            aliquet. Nulla porttitor, nisl pellentesque vulputate egestas, nibh tellus fringilla arcu, at accumsan
-            tellus
-            mauris eu quam. Vivamus efficitur lorem ut libero ultricies consequat in sed mi. Vestibulum quis mauris
-            nisi.
-
-            In nisl augue, lobortis ac faucibus semper, sodales id magna. Aenean mattis laoreet arcu, at pharetra neque
-            fermentum a. Curabitur dignissim volutpat ultrices. Mauris nulla mi, sollicitudin at faucibus sit amet,
-            sollicitudin ac eros. Nullam id feugiat nibh. Aenean vitae diam sem. Proin mattis consectetur dolor molestie
-            pulvinar. Integer id malesuada mauris. Fusce at ullamcorper ante. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Sed augue libero, lacinia et congue vitae, eleifend nec
-            diam.
-          </div>
+    <section id="galeria" class="container">
+      <div class="text-center pt-5">
+          <h1 >La Korianda</h1>
+          <p>
+             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien urna, faucibus eget maximus quis,
+          lacinia
+          quis urna. Sed in vulputate nibh. Aenean convallis dictum libero eget congue. Maecenas aliquet non nisi
+          bibendum".
+          </p>
+      </div>
+    
+      <div class="row d-print-table-row">
+        <div class="col-lg-2 col-md-4 col-sm-6 ">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
         </div>
-
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="assets/menu.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">MENU DIARIO</h5>
-                <p class="card-text">Nuestro delicioso y variado menú que cambia cada día ofreciendo opciones veganas y
-                  siempre ¡TODO SIN GLUTEN!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="assets/galletas.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">POSTRES</h5>
-                <p class="card-text">Cien por cien caseros.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="assets/comida.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Platos variados</h5>
-                <p class="card-text">Comida casera con toques exóticos que los hacen especiales</p>
-              </div>
-            </div>
-          </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 ">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
         </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 ">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 ">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 ">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 ">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 ">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="assets/comida.jpeg" alt="Galeria Imagen">
+        </div>
+      </div>
+    </section>
 
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
-
-          <a href="/"
-            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
-
-          <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre nosotros</a></li>
-          </ul>
+      <div class="container my-5 d-print-none">
+        <footer class="text-center text-lg-start">
+          <div class="container d-flex justify-content-center py-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, eveniet distinctio sapiente nostrum aliquam ad quam doloribus ipsa accusantium id consectetur ea voluptatem blanditiis perferendis quo quae eaque labore? Labore.
+          </div>
         </footer>
       </div>
 
+    
 
 
 
@@ -114,10 +134,12 @@
 
 
 
+    
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/ccbc09d003.js" crossorigin="anonymous"></script>
 
 </body>
 
